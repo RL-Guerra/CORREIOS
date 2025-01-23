@@ -2,6 +2,7 @@ function trackObject(event) {
     event.preventDefault();
     const trackingCode = document.getElementById('trackingCode').value.trim();
     const resultDiv = document.getElementById('trackingResult');
+    const mapSection = document.querySelector('.map');
 
     if (!trackingCode) {
         alert('Por favor, preencha o campo de rastreamento.');
@@ -26,4 +27,7 @@ function trackObject(event) {
         <p><strong>Origem:</strong> ${trackingInfo.origem}</p>
         <p><strong>Destino:</strong> ${trackingInfo.destino}</p>
     `;
+
+    // Exibe a seção do mapa
+    mapSection.style.display = 'block';
 }
