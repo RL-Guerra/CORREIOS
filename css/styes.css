@@ -15,15 +15,15 @@ header {
 }
 
 header .logo {
-    width: 100px; /* Ajuste conforme necessário para maior tamanho */
+    width: 100px;
     height: auto;
     margin-right: 20px;
-    align-self: flex-start; /* Alinha a imagem à esquerda */
+    align-self: flex-start;
 }
 
 h1 {
     margin: 0;
-    flex-grow: 1; /* Faz com que o título ocupe o espaço restante */
+    flex-grow: 1;
 }
 
 main {
@@ -83,4 +83,46 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+}
+
+.promo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.map {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map h2 {
+    margin-top: 0;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .promo img,
+    .map img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo img,
+    .map img {
+        width: 100%;
+        height: auto;
+    }
 }
